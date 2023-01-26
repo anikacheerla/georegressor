@@ -10,9 +10,6 @@ widget:
 - src: https://huggingface.co/lhaas/StreetCLIP/resolve/main/sanfrancisco.jpeg
   candidate_labels: San Jose, San Diego, Los Angeles, Las Vegas, San Francisco, Seattle
   example_title: Cities
-- src: https://huggingface.co/lhaas/StreetCLIP/resolve/main/australia.jpeg
-  candidate_labels: tropical climate, dry climate, temperate climate, continental climate, polar climate
-  example_title: Climate
 library_name: transformers
 tags:
 - geolocalization
@@ -23,10 +20,16 @@ tags:
 - clip
 - urban
 - rural
+- multi-modal
 ---
-# Model Card for Model ID
+# Model Card for StreetCLIP
 
-<!-- Provide a quick summary of what the model is/does. -->
+StreetCLIP is a robust foundation model for open-domain image geolocalization and other
+geographic and climate-related tasks.
+
+Trained on a dataset of 1.1 million geo-tagged images, it achieves state-of-the-art performance
+on multiple open-domain image geolocalization benchmarks in zero-shot, outperforming supervised models
+trained on millions of images.
 
 
 # Model Details
@@ -44,44 +47,32 @@ tags:
 
 ## Model Sources
 
-<!-- Provide the basic links for the model. -->
-
-- **Paper:** Pre-print available soon ..
+- **Paper:** Pre-print available soon ...
 - **Demo:** Currently in development ...
 
 # Uses
 
-<!-- Address questions around how the model is intended to be used, including the foreseeable users of the model and those affected by the model. -->
+To be added soon ...
 
 ## Direct Use
 
-<!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
+To be added soon ...
 
-[More Information Needed]
+## Downstream Use
 
-## Downstream Use [optional]
-
-<!-- This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
-
-[More Information Needed]
+To be added soon ...
 
 ## Out-of-Scope Use
 
-<!-- This section addresses misuse, malicious use, and uses that the model will not work well for. -->
-
-[More Information Needed]
+To be added soon ...
 
 # Bias, Risks, and Limitations
 
-<!-- This section is meant to convey both technical and sociotechnical limitations. -->
-
-[More Information Needed]
+To be added soon ...
 
 ## Recommendations
 
-<!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
-
-Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations.
+To be added soon ...
 
 ## How to Get Started with the Model
 
@@ -93,10 +84,10 @@ import requests
 
 from transformers import CLIPProcessor, CLIPModel
 
-model = CLIPModel.from_pretrained("lhaas/StreetCLIP")
-processor = CLIPProcessor.from_pretrained("lhaas/StreetCLIP")
+model = CLIPModel.from_pretrained("geolocational/StreetCLIP")
+processor = CLIPProcessor.from_pretrained("geolocational/StreetCLIP")
 
-url = "https://huggingface.co/lhaas/StreetCLIP/resolve/main/sanfrancisco.jpeg"
+url = "https://huggingface.co/geolocational/StreetCLIP/resolve/main/sanfrancisco.jpeg"
 image = Image.open(requests.get(url, stream=True).raw)
 
 choices = ["San Jose", "San Diego", "Los Angeles", "Las Vegas", "San Francisco"]
@@ -111,83 +102,55 @@ probs = logits_per_image.softmax(dim=1) # we can take the softmax to get the lab
 
 ## Training Data
 
-<!-- This should link to a Data Card, perhaps with a short stub of information on what the training data is all about as well as documentation related to data pre-processing or additional filtering. -->
+StreetCLIP was trained on an undisclosed street-level dataset of 1.1 million real-world,
+urban and rural images. The data used to train the model comes from 101 countries.
 
-[More Information Needed]
-
-## Training Procedure [optional]
-
-<!-- This relates heavily to the Technical Specifications. Content here should link to that section when it is relevant to the training procedure. -->
+## Training Procedure
 
 ### Preprocessing
 
-[More Information Needed]
-
-### Speeds, Sizes, Times
-
-<!-- This section provides information about throughput, start/end time, checkpoint size if relevant, etc. -->
-
-[More Information Needed]
+Same preprocessing as [openai/clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336).
 
 # Evaluation
 
-<!-- This section describes the evaluation protocols and provides the results. -->
+StreetCLIP was evaluated in zero-shot on two open-domain image geolocalization benchmarks using a
+technique called hierarchical linear probing. Hierarchical linear probing sequentially attempts to
+identify the correct country and then city of geographical image origin.
 
 ## Testing Data, Factors & Metrics
 
 ### Testing Data
 
-<!-- This should link to a Data Card if possible. -->
-
-[More Information Needed]
-
-### Factors
-
-<!-- These are the things the evaluation is disaggregating by, e.g., subpopulations or domains. -->
-
-[More Information Needed]
+* [IM2GPS](http://graphics.cs.cmu.edu/projects/im2gps/).
+* [IM2GPS3K](https://github.com/lugiavn/revisiting-im2gps)
 
 ### Metrics
 
-<!-- These are the evaluation metrics being used, ideally with a description of why. -->
-
-[More Information Needed]
+To be added soon ...
 
 ## Results
 
-[More Information Needed]
+To be added soon ...
 
 ### Summary
 
-
-
-# Model Examination [optional]
-
-<!-- Relevant interpretability work for the model goes here -->
-
-[More Information Needed]
+Our experiments demonstrate that our synthetic caption pretraining method is capable of significantly
+improving CLIP's generalized zero-shot capabilities applied to open-domain image geolocalization while
+achieving SOTA performance on a selection of benchmark metrics.
 
 # Environmental Impact
-
-<!-- Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly -->
-
-Carbon emissions can be estimated using the [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute) presented in [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700).
 
 - **Hardware Type:** 4 NVIDIA A100 GPUs
 - **Hours used:** 12
 
 # Example Image Attribution
 
-[More information needed]
+To be added soon ...
 
-# Citation [optional]
+# Citation
 
-<!-- If there is a paper or blog post introducing the model, the APA and Bibtex information for that should go in this section. -->
+Preprint available soon ...
 
 **BibTeX:**
 
-[More Information Needed]
-
-**APA:**
-
-[More Information Needed]
+Available soon ...
