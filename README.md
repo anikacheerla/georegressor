@@ -84,10 +84,10 @@ import requests
 
 from transformers import CLIPProcessor, CLIPModel
 
-model = CLIPModel.from_pretrained("geolocational/StreetCLIP")
-processor = CLIPProcessor.from_pretrained("geolocational/StreetCLIP")
+model = CLIPModel.from_pretrained("geolocal/StreetCLIP")
+processor = CLIPProcessor.from_pretrained("geolocal/StreetCLIP")
 
-url = "https://huggingface.co/geolocational/StreetCLIP/resolve/main/sanfrancisco.jpeg"
+url = "https://huggingface.co/geolocal/StreetCLIP/resolve/main/sanfrancisco.jpeg"
 image = Image.open(requests.get(url, stream=True).raw)
 
 choices = ["San Jose", "San Diego", "Los Angeles", "Las Vegas", "San Francisco"]
