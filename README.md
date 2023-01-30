@@ -4,10 +4,10 @@ language:
 - en
 pipeline_tag: zero-shot-image-classification
 widget:
-- src: https://huggingface.co/lhaas/StreetCLIP/resolve/main/nagasaki.jpg
+- src: https://huggingface.co/geolocal/StreetCLIP/resolve/main/nagasaki.jpg
   candidate_labels: China, South Korea, Japan, Phillipines, Taiwan, Vietnam, Cambodia 
   example_title: Countries
-- src: https://huggingface.co/lhaas/StreetCLIP/resolve/main/sanfrancisco.jpeg
+- src: https://huggingface.co/geolocal/StreetCLIP/resolve/main/sanfrancisco.jpeg
   candidate_labels: San Jose, San Diego, Los Angeles, Las Vegas, San Francisco, Seattle
   example_title: Cities
 library_name: transformers
