@@ -59,15 +59,42 @@ the following use cases are recommended for StreetCLIP.
 ## Direct Use
 
 StreetCLIP can be used out-of-the box using zero-shot learning to infer the geolocation of images on a country, region,
-or city level. Given that StreetCLIP was pretrained on a dataset of stree-level urban and rural images,
+or city level. Given that StreetCLIP was pretrained on a dataset of street-level urban and rural images,
 the best performance can be expected on images from a similar distribution.
 
-Broader direct use cases 
+Broader direct use cases are any zero-shot image classification tasks that rely on urban and rural street-level
+understanding or geographical information relating visual clues to their region of origin.
 
 ## Downstream Use
 
 StreetCLIP can be finetuned for any downstream applications that require geographic or street-level urban or rural
-scene understanding. 
+scene understanding. Examples of use cases are the following:
+
+**Understanding the Built Environment**
+
+- Analyzing building quality
+- Building type classifcation
+- Building energy efficiency Classification
+
+**Analyzing Infrastructure**
+
+- Analyzing road quality
+- Utility pole maintenance
+- Identifying damage from natural disasters or armed conflicts
+
+**Understanding the Natural Environment**
+
+- Mapping vegetation
+- Vegetation classification
+- Soil type classifcation
+- Tracking deforestation
+
+**General Use Cases**
+
+- Street-level image segmentation
+- Urban and rural scene classification
+- Object detection in urban or rural environments
+- Improving navigation and self-driving car technology
 
 ## Out-of-Scope Use
 
@@ -80,9 +107,8 @@ attempting to geolocalize users' private images
 
 ## Recommendations
 We encourage the community to apply StreetCLIP to applications with significant social impact of which there are many.
-Examples include analyzing the built environment (i.e. building quality, type, or energy efficiency classification),
-infrastructure (i.e. road quality, utility pole maintenance, identifying damage from natural disasters), and natural
-environment (i.e. image segmentation, vegetation mapping and classification, tracking deforestation).
+The first three categories of potential use cases under Downstream Use list potential use cases with social impact
+to explore.
 
 ## How to Get Started with the Model
 
