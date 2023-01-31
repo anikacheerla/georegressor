@@ -27,52 +27,62 @@ tags:
 StreetCLIP is a robust foundation model for open-domain image geolocalization and other
 geographic and climate-related tasks.
 
-Trained on a dataset of 1.1 million geo-tagged images, it achieves state-of-the-art performance
-on multiple open-domain image geolocalization benchmarks in zero-shot, outperforming supervised models
-trained on millions of images.
+Trained on an original dataset of 1.1 million street-level urban and rural geo-tagged images, it achieves
+state-of-the-art performance on multiple open-domain image geolocalization benchmarks in zero-shot, 
+outperforming supervised models trained on millions of images.
 
+# Model Description
 
-# Model Details
+StreetCLIP is a model pretrained by deriving image captions synthetically from image class labels using
+a domain-specific caption template. This allows StreetCLIP to transfer its generalized zero-shot learning
+capabilities to a specific domain (i.e. the domain of image geolocalization). 
+StreetCLIP builds on the OpenAI's pretrained large version of CLIP ViT, using 14x14 pixel
+patches and images with a 336 pixel side length.
 
-## Model Description
+## Model Details
 
-<!-- Provide a longer summary of what this model is. -->
-
-
-- **Developed by:** Authors not disclosed
 - **Model type:** [CLIP](https://openai.com/blog/clip/)
 - **Language:** English
 - **License:** Create Commons Attribution Non Commercial 4.0
-- **Finetuned from model:** [openai/clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336)
+- **Trained from model:** [openai/clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336)
 
 ## Model Sources
 
 - **Paper:** Pre-print available soon ...
-- **Demo:** Currently in development ...
 
 # Uses
 
-To be added soon ...
+StreetCLIP has a deep understanding of the visual features found in street-level urban and rural scenes
+and knows how to relate these concepts to specific countries, regions, and cities. Given its training setup,
+the following use cases are recommended for StreetCLIP.
 
 ## Direct Use
 
-To be added soon ...
+StreetCLIP can be used out-of-the box using zero-shot learning to infer the geolocation of images on a country, region,
+or city level. Given that StreetCLIP was pretrained on a dataset of stree-level urban and rural images,
+the best performance can be expected on images from a similar distribution.
+
+Broader direct use cases 
 
 ## Downstream Use
 
-To be added soon ...
+StreetCLIP can be finetuned for any downstream applications that require geographic or street-level urban or rural
+scene understanding. 
 
 ## Out-of-Scope Use
 
-To be added soon ...
+Any use cases attempting to geolocate users' private images are out-of-scope and discouraged.
 
 # Bias, Risks, and Limitations
 
-To be added soon ...
+StreetCLIP was not trained on social media images or images of identifable people for a reason. As such, any use case
+attempting to geolocalize users' private images 
 
 ## Recommendations
-
-To be added soon ...
+We encourage the community to apply StreetCLIP to applications with significant social impact of which there are many.
+Examples include analyzing the built environment (i.e. building quality, type, or energy efficiency classification),
+infrastructure (i.e. road quality, utility pole maintenance, identifying damage from natural disasters), and natural
+environment (i.e. image segmentation, vegetation mapping and classification, tracking deforestation).
 
 ## How to Get Started with the Model
 
@@ -102,14 +112,23 @@ probs = logits_per_image.softmax(dim=1) # we can take the softmax to get the lab
 
 ## Training Data
 
-StreetCLIP was trained on an undisclosed street-level dataset of 1.1 million real-world,
-urban and rural images. The data used to train the model comes from 101 countries.
+StreetCLIP was trained on an original, unreleased street-level dataset of 1.1 million real-world,
+urban and rural images. The data used to train the model comes from 101 countries, biased towards
+western countries and not including India and China.
+
+## Preprocessing
+
+Same preprocessing as [openai/clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336).
 
 ## Training Procedure
 
-### Preprocessing
+StreetCLIP is initialized with OpenAI's pretrained large version of CLIP ViT and then pretrained using the synthetic
+caption domain-specific pretraining method described in the paper corresponding to this work. StreetCLIP was trained
+for 3 epochs using an AdamW optimizer with a learning rate of 1e-6 on 3 NVIDIA A100 80GB GPUs, a batch size of 32,
+and gradient accumulation of 12 steps.
 
-Same preprocessing as [openai/clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336).
+StreetCLIP was trained with the goal of matching images in the batch
+with the caption correponding to the correct city, region, and country of the images' origins.
 
 # Evaluation
 
@@ -121,12 +140,17 @@ identify the correct country and then city of geographical image origin.
 
 ### Testing Data
 
+StreetCLIP was evaluated on the following two open-domain image geolocalization benchmarks.
+
 * [IM2GPS](http://graphics.cs.cmu.edu/projects/im2gps/).
 * [IM2GPS3K](https://github.com/lugiavn/revisiting-im2gps)
 
 ### Metrics
 
-To be added soon ...
+The objective of the listed benchmark datasets is to predict the images' coordinates of origin with as
+little deviation as possible. A common metric set forth in prior literature is called Percentage at Kilometer (% @ KM).
+The Percentage at Kilometer metric first calculates the distance in kilometers between the predicted coordinates
+to the ground truth coordinates and then looks at what percentage of error distances are below a certain kilometer threshold.
 
 ## Results
 
@@ -142,10 +166,6 @@ achieving SOTA performance on a selection of benchmark metrics.
 
 - **Hardware Type:** 4 NVIDIA A100 GPUs
 - **Hours used:** 12
-
-# Example Image Attribution
-
-To be added soon ...
 
 # Citation
 
