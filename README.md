@@ -162,7 +162,7 @@ StreetCLIP was evaluated in zero-shot on two open-domain image geolocalization b
 technique called hierarchical linear probing. Hierarchical linear probing sequentially attempts to
 identify the correct country and then city of geographical image origin.
 
-## Testing Data, Factors & Metrics
+## Testing Data and Metrics
 
 ### Testing Data
 
@@ -180,13 +180,24 @@ to the ground truth coordinates and then looks at what percentage of error dista
 
 ## Results
 
-To be added soon ...
+**IM2GPS**
+
+| | Distance (% @ km) |
+| Model | City | Region | Country | Continent |
+|   |  25km | 200km  | 750km | 2,500km |
+|----------|:-------------:|:------:|:------:|:------:|
+| PlaNet (2016) |  24.5 | 37.6 | 53.6 | 71.3 |
+| ISNs (2018) |  43.0 | 51.9 | 66.7 | 80.2 |
+| TransLocator (2022) |  **48.1** | **64.6** | **75.6** | 86.7 |
+| **Zero-Shot CLIP (ours)** | 27.0 | 42.2 | 71.7 | 86.9 |
+| **Zero-Shot StreetCLIP (ours)** |  28.3 | 45.1 | 74.7 | **88.2** |
+
 
 ### Summary
 
 Our experiments demonstrate that our synthetic caption pretraining method is capable of significantly
 improving CLIP's generalized zero-shot capabilities applied to open-domain image geolocalization while
-achieving SOTA performance on a selection of benchmark metrics.
+achieving state-of-the-art performance on a selection of benchmark metrics.
 
 # Environmental Impact
 
