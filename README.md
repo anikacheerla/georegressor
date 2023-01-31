@@ -181,9 +181,6 @@ to the ground truth coordinates and then looks at what percentage of error dista
 ## Results
 
 **IM2GPS**
-
-Metric: Percentage at Kilometer (% @ KM)
-
 | Model  |  25km | 200km  | 750km | 2,500km |
 |----------|:-------------:|:------:|:------:|:------:|
 | PlaNet (2016) |  24.5 | 37.6 | 53.6 | 71.3 |
@@ -191,6 +188,17 @@ Metric: Percentage at Kilometer (% @ KM)
 | TransLocator (2022) |  **48.1** | **64.6** | **75.6** | 86.7 |
 | **Zero-Shot CLIP (ours)** | 27.0 | 42.2 | 71.7 | 86.9 |
 | **Zero-Shot StreetCLIP (ours)** |  28.3 | 45.1 | 74.7 | **88.2** |
+Metric: Percentage at Kilometer (% @ KM)
+
+**IM2GPS3K**
+| Model  |  25km | 200km  | 750km | 2,500km |
+|----------|:-------------:|:------:|:------:|:------:|
+| PlaNet (2016) |  24.8 | 34.3 | 48.4 | 64.6 |
+| ISNs (2018) |  28.0 | 36.6 | 49.7 | 66.0 |
+| TransLocator (2022) |  **31.1** | **46.7** | 58.9 | 80.1 |
+| **Zero-Shot CLIP (ours)** | 19.5 | 34.0 | 60.0 | 78.1 |
+| **Zero-Shot StreetCLIP (ours)** |  22.4 | 37.4 | **61.3** | **80.4** |
+Metric: Percentage at Kilometer (% @ KM)
 
 
 ### Summary
