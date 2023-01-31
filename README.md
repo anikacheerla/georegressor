@@ -182,9 +182,9 @@ to the ground truth coordinates and then looks at what percentage of error dista
 
 **IM2GPS**
 
-| | Distance (% @ km) |
-| Model | City | Region | Country | Continent |
-|   |  25km | 200km  | 750km | 2,500km |
+Metric: Percentage at Kilometer (% @ KM)
+
+| Model  |  25km | 200km  | 750km | 2,500km |
 |----------|:-------------:|:------:|:------:|:------:|
 | PlaNet (2016) |  24.5 | 37.6 | 53.6 | 71.3 |
 | ISNs (2018) |  43.0 | 51.9 | 66.7 | 80.2 |
