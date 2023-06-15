@@ -48,7 +48,18 @@ patches and images with a 336 pixel side length.
 
 ## Model Sources
 
-- **Paper:** Pre-print available soon ...
+- **Paper:** [Preprint](https://arxiv.org/abs/2302.00275)
+- **Cite preprint as:**
+```bibtex
+  @misc{haas2023learning,
+      title={Learning Generalized Zero-Shot Learners for Open-Domain Image Geolocalization}, 
+      author={Lukas Haas and Silas Alberti and Michal Skreta},
+      year={2023},
+      eprint={2302.00275},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+  }
+```
 
 # Uses
 
@@ -214,8 +225,15 @@ achieving state-of-the-art performance on a selection of benchmark metrics.
 
 # Citation
 
-Preprint available soon ...
+Cite preprint as:
 
-**BibTeX:**
-
-Available soon ...
+```bibtex
+  @misc{haas2023learning,
+      title={Learning Generalized Zero-Shot Learners for Open-Domain Image Geolocalization}, 
+      author={Lukas Haas and Silas Alberti and Michal Skreta},
+      year={2023},
+      eprint={2302.00275},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+  }
+```
