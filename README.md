@@ -21,6 +21,7 @@ tags:
 - urban
 - rural
 - multi-modal
+- geoguessr
 ---
 # Model Card for StreetCLIP
 
