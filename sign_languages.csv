@@ -1,121 +1,119 @@
-country,Languages
 Aland,Swedish,Finnish
-Cambodia,Khmer
-Germany,German
-Jersey,English
-Montenegro,Montenegrin
+Cambodia,Khmer,English
+Germany,German,
+Jersey,English,French
+Montenegro,Montenegrin,Serbian
 Puerto Rico,Spanish,English
-Sweden,Swedish
-Albania,Albanian
+Sweden,Swedish,
+Albania,Albanian,Greek
 Canada,English,French
-Ghana,English
-Jordan,Arabic
-Mozambique,Portuguese
-Qatar,Arabic
-Switzerland,German,French,Italian
+Ghana,English,French
+Jordan,Arabic,English
+Mozambique,Portuguese,English
+Qatar,Arabic,English
+Switzerland,German, 
 American Samoa,Samoan,English
-Chile,Spanish
-Gibraltar,English
+Chile,Spanish, 
+Gibraltar,English,Spanish
 Kenya,Swahili,English
-Myanmar,Burmese
-Reunion,French
-Taiwan,Chinese
-Andorra,Catalan,Spanish,French
-China,Chinese
-Greece,Greek
+Myanmar,Burmese,English
+Reunion,French,Malagasy
+Taiwan,Chinese,English
+Andorra,Catalan,Spanish
+China,Chinese,English
+Greece,Greek,Albanian
 Kyrgyzstan,Kyrgyz,Russian
-Nepal,Nepali
-Romania,Romanian
+Nepal,Nepali,Hindi
+Romania,Romanian,Hungarian
 Tanzania,Swahili,English
-Antarctica,English
-Colombia,Spanish
-Greenland,Greenlandic,English
-Laos,Lao
-Netherlands,Dutch
-Russia,Russian
-Thailand,Thai
-Argentina,Spanish
-Costa Rica,Spanish
+Antarctica,English,French
+Colombia,Spanish,English
+Greenland,Greenlandic,Danish
+Laos,Lao,Thai
+Netherlands,Dutch,English
+Russia,Russian,Tatar
+Thailand,Thai,English
+Argentina,Spanish,Guarani
+Costa Rica,Spanish,English
 Guam,Chamorro,English
-Latvia,Latvian
+Latvia,Latvian,Russian
 New Zealand,English,Maori
-San Marino,Italian
-Tunisia,Arabic
-Armenia,Armenian
-Croatia,Croatian
-Guatemala,Spanish
-Lebanon,Arabic
-Nigeria,English
-Senegal,French
-Turkey,Turkish
-Australia,English
+San Marino,Italian,English
+Tunisia,Arabic,French
+Armenia,Armenian,Russian
+Croatia,Croatian,Serbian
+Guatemala,Spanish,K'iche'
+Lebanon,Arabic,French
+Nigeria,English,French
+Senegal,French,Wolof
+Turkey,Turkish,Kurdish
+Australia,English,Chinese
 Curacao,Dutch,Papiamento
 Hong Kong,Chinese,English
-Lesotho,Sesotho,English
-North Macedonia,Macedonian
-Serbia,Serbian
-US Virgin Islands,English
-Austria,German
-Czechia,Czech
-Hungary,Hungarian
-Lithuania,Lithuanian
+Lesotho,English,Sesotho
+North Macedonia,Macedonian,Albanian
+Serbia,Serbian,Albanian
+US Virgin Islands,English,Spanish
+Austria,German,Turkish
+Czechia,Czech,Slovak
+Hungary,Hungarian,Romanian
+Lithuania,Lithuanian,Russian
 Northern Mariana Islands,Chamorro,English
-Singapore,English,Malay,Chinese,Tamil
+Singapore,English,Mandarin
 Uganda,English,Swahili
-Bangladesh,Bengali
-Denmark,Danish
-Iceland,Icelandic
-Luxembourg,Luxembourgish,French,German
-Norway,Norwegian
-Slovakia,Slovak
-Ukraine,Ukrainian
+Bangladesh,Bengali,English
+Denmark,Danish,English
+Iceland,Icelandic,English
+Luxembourg,Luxembourgish,French
+Norway,Norwegian,Sami
+Slovakia,Slovak,Hungarian
+Ukraine,Ukrainian,Russian
 Belarus,Belarusian,Russian
-Dominican Republic,Spanish
+Dominican Republic,Spanish,English
 India,Hindi,English
 Macao,Chinese,Portuguese
 Pakistan,Urdu,English
-Slovenia,Slovenian
-United Arab Emirates,Arabic, English
-Belgium,Dutch,French,German
-Ecuador,Spanish
-Indonesia,Indonesian
+Slovenia,Slovenian,Italian
+United Arab Emirates,Arabic,English
+Belgium,Dutch,French
+Ecuador,Spanish,Quechua
+Indonesia,Indonesian, 
 Madagascar,Malagasy,French
-Palestine,Arabic
+Palestine,Arabic,Hebrew
 South Africa,English,Afrikaans
-United Kingdom,English
-Bermuda,English
-Egypt,Arabic
+United Kingdom,English, 
+Bermuda,English,Portuguese
+Egypt,Arabic,English
 Iraq,Arabic,Kurdish
-Malaysia,Malay
+Malaysia,Malay,English
 Paraguay,Spanish,Guarani
-South Georgia and South Sandwich Islands,English
-United States,English
-Bhutan,Dzongkha
-Estonia,Estonian
+South Georgia and South Sandwich Islands,English,French
+United States,English, 
+Bhutan,Dzongkha,Nepali
+Estonia,Estonian,Russian
 Ireland,English,Irish
-Malta,Maltese,English
-Peru,Spanish
-South Korea,Korean
-Uruguay,Spanish
-Bolivia,Spanish
+Malta,English,Maltese
+Peru,Spanish,Quechua
+South Korea,Korean,English
+Uruguay,Spanish,Portuguese
+Bolivia,Spanish,Quechua
 Eswatini,Swati,English
 Isle of Man,English,Manx
-Martinique,French
+Martinique,French,English
 Philippines,Filipino,English
-South Sudan,English
-Venezuela,Spanish
+South Sudan,English,Arabic
+Venezuela,Spanish,English
 Botswana,English,Tswana
-Faroe Islands,Faroese
+Faroe Islands,Faroese,English
 Israel,Hebrew,Arabic
-Mexico,Spanish
-Pitcairn Islands,English
-Spain,Spanish
-Vietnam,Vietnamese
-Brazil,Portuguese
-Finland,Finnish
-Italy,Italian
-Monaco,French
-Poland,Polish
+Mexico,Spanish,English
+Pitcairn Islands,English,English
+Spain,Spanish,Catalan
+Vietnam,Vietnamese,English
+Brazil,Portuguese,English
+Finland,Finnish,Swedish
+Italy,Italian,German
+Monaco,French,English
+Poland,Polish,German
 Sri Lanka,Sinhala,Tamil
-Svalbard and Jan Mayen,Norwegian
-
+Svalbard and Jan Mayen,Norwegian,English
