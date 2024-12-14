@@ -1,1 +1,3 @@
-Geolocalization, determining precise locations from vi- sual cues, poses challenges due to environmental complex- ity. Inspired by Geoguessr, we develop a robust system using advanced computer vision and language models to predict locations from street-level images. Additionally, we explore model interpretability to understand decision-making processes and address biases.
+Geolocalization, determining precise locations from visual cues, poses challenges due to environmental complex- ity. Inspired by Geoguessr, we develop a system using CLIP (an advanced computer vision and language model) to predict locations from street-level images. Additionally, we explore model interpretability to understand decision-making processes and address biases.
+
+
